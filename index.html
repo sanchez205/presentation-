@@ -18,10 +18,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            position: relative;
         }
         h1, h2 {
             color: #333;
+            text-align: center;
         }
         .section {
             margin-bottom: 20px;
@@ -32,12 +33,14 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="melani.jpeg" alt="Foto de Melani Fernanda Sanchez Salazar" class="profile-img">
         <h1>Melani Fernanda Sanchez Salazar</h1>
         <p><strong>Edad:</strong> 21 años</p>
         <p><strong>Ubicación:</strong> Cochabamba, Bolivia</p>
@@ -75,6 +78,8 @@
             <h2>Pasatiempos</h2>
             <p>Me gusta jugar voleibol y ver películas en mi tiempo libre.</p>
         </div>
+        
+        <img src="melani.jpeg" alt="Foto de Melani Fernanda Sanchez Salazar" class="profile-img">
     </div>
 </body>
 </html>
