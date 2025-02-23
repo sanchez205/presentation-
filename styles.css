@@ -19,8 +19,8 @@ body {
 }
 
 .sidebar {
-    background: #333;
-    color: white;
+    background: #1be0ee;
+    color: rgb(12, 12, 12);
     padding: 20px;
     width: 30%;
     text-align: center;
