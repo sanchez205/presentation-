@@ -1,29 +1,22 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e3e3e3;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 900px;
-    display: flex;
-    background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
+/* Barra lateral */
 .sidebar {
-    background: #1be0ee;
-    color: rgb(12, 12, 12);
-    padding: 20px;
+    background-color: #2A5DA8;
+    color: white;
     width: 30%;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
@@ -31,31 +24,72 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 20%;
-    margin-bottom: 10px;
+    object-position: center;
+    margin-bottom: 15px;
 }
 
+.sidebar p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Contenido principal */
 .content {
     width: 70%;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #333;
+    padding: 40px;
+    background: white;
 }
 
 .section {
     margin-bottom: 20px;
 }
 
-ul {
+.section h2 {
+    color: #2A5DA8;
+    border-bottom: 2px solid #2A5DA8;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
-    background: #f4f4f4;
+.section ul li {
     margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.section ul li::before {
+    content: '\2022';
+    color: #2A5DA8;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        width: 100%;
+    }
 }
