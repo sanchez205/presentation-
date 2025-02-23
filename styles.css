@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 900px;
+    display: flex;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Barra lateral */
+.sidebar {
+    background: #333;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Contenido principal */
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Estilos de los títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Lista de habilidades */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
